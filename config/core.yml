@@ -1,0 +1,22 @@
+---
+
+redis: 
+  port: 6379
+  host: localhost
+
+daemon: 
+  log: /var/log/redis_wrapper.log
+  pidfile: /var/run/redis_wrapper.pid
+  port: 5005
+
+defaults:
+  applications:
+    testapp:
+      key: 1376bf359b92657f29d2446da42d27e9
+      name: testapp
+      write: true
+      read: true
+      exec: false
+
+
+

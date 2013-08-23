@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'daemons'
+
+Daemons.run("lib/redis_wrapper.rb", app_name: "redis_wrapper")
